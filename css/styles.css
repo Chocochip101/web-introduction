@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+#introduction {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#profile {
+    margin-bottom: 20px;
+}
+
+#best-musics table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#best-musics th, #best-musics td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#best-musics th {
+    background-color: #f2f2f2;
+}
+
+#best-musics img {
+    max-width: 100px;
+    height: auto;
+}
+
+#guestbook form {
+    margin-top: 20px;
+}
+
+#guestbook label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#guestbook input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#guestbook h3 {
+    margin-top: 10px;
+}
+
+#guestbook input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#guestbook button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#guestbook button[type="reset"] {
+    background-color: #f44336;
+    margin-left: 10px;
+}

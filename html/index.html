@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나의 홈페이지</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/guestbook.js" defer></script>
+</head>
+<body>
+    <div id="introduction">
+        <div id="profile">
+            <h2>자기소개</h2>
+            <ul>
+                <li>이름: 초코칩</li>
+                <li>사는 곳: 광진구</li>
+                <li>안녕하세요! 백엔드 개발자 초코칩입니다🍪 </li>
+            </ul>
+        </div>
+        
+        <div id="best-musics">
+            <h2>인생 음악 BEST5</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>순위</th>
+                        <th>음악 제목</th>
+                        <th>가수</th>
+                        <th>앨범</th>
+                        <th>링크</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>깊은 밤을 날아서</td>
+                        <td>규현</td>
+                        <td><img src="../images/nightfly.jpg" alt="endgame"></td>
+                        <td><a href="https://naver.me/xxxpQqmx" target="_blank">바로가기</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Trip</td>
+                        <td>릴러말즈</td>
+                        <td><img src="../images/trip.jpg" alt="trip"></td>
+                        <td><a href="https://naver.me/Fyexm141" target="_blank">바로가기</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>에잇(Prod.&Feat. SUGA of BTS)</td>
+                        <td>아이유</td>
+                        <td><img src="../images/eight.png" alt="eight"></td>
+                        <td><a href="https://naver.me/xfaaPZZq" target="_blank">바로가기</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Antifreeze</td>
+                        <td>백예린</td>
+                        <td><img src="../images/antifreeze.jpg" alt="antifreeze"></td>
+                        <td><a href="https://naver.me/F0KhPZUn" target="_blank">바로가기</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Weekend</td>
+                        <td>태연</td>
+                        <td><img src="../images/weekend.jpg" alt="weekend"></td>
+                        <td><a href="https://naver.me/FcaAvbNy" target="_blank">바로가기</a></td>
+                    </tr>
+ 
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 방명록 -->
+        <div id="guestbook">
+            <h2>방명록</h2>
+            <form id="guestbookForm">
+                <label for="visitorName">이름:</label>
+                <input type="text" id="visitorName" name="visitorName">
+
+                <h3>본인 취향의 음악</h3>
+                <input type="checkbox" id="music1" name="music1" value="music1">
+                <label for="music1">깊은 밤을 날아서</label>
+
+                <input type="checkbox" id="music2" name="music2" value="music2">
+                <label for="music2">Trip</label>
+
+                <input type="checkbox" id="music3" name="music3" value="music3">
+                <label for="music3">에잇(Prod.&Feat. SUGA of BTS)</label>
+
+                <input type="checkbox" id="music4" name="music4" value="music4">
+                <label for="music4">Antifreeze</label>
+
+                <input type="checkbox" id="music5" name="music5" value="music5">
+                <label for="music5">Weekend</label>
+                <br>
+
+                <button type="button" id="submitBtn" onclick="checkTaste()">등록</button>
+                <button type="reset">취소</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
